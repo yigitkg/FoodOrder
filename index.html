@@ -20,7 +20,7 @@
       <a href="#" class="logo">
         <img src="images/logo.png" alt="logo" />
       </a>
-      <nav class="navbar">
+      <nav class="navbar active">
         <a href="#" class="active">Home</a>
         <a href="#">About</a>
         <a href="#">Menu</a>
@@ -36,9 +36,50 @@
         <button>
           <i class="fas fa-shopping-cart"></i>
         </button>
-        <button>
+        <button id="menu-btn">
           <i class="fas fa-bars"></i>
         </button>
+      </div>
+
+      <div class="search-form">
+        <input type="text" class="search-input" id="search-box" placeholder="search here">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-1.png" alt="menu">
+          <div class="content">
+            <h3>Cart item 01</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-2.png" alt="menu">
+          <div class="content">
+            <h3>Cart item 02</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-3.png" alt="menu">
+          <div class="content">
+            <h3>Cart item 03</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <i class="fas fa-times"></i>
+          <img src="images/menu-4.png" alt="menu">
+          <div class="content">
+            <h3>Cart item 04</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Checkout Now</a>
       </div>
     </header>
     <!--! hader section ends-->
@@ -254,15 +295,104 @@
     <!--! customer's review section ends-->
 
     <!--! contact us section starts-->
-    <section class="products">
+    <section class="contact">
       <h1 class="heading">Contact <span>Us</span></h1>
+      <div class="row">
+        <iframe
+        class="map" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12050.679189891249!2d29.062745!3d40.966812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac776adf0b1f3%3A0xa12cf32edabe5e2a!2zQ2FkZGVib3N0YW4sIDM0NzI4IEthZMSxa8O2eS_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1675767240586!5m2!1sen!2str"
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <form>
+          <h3>Get in Touch</h3>
+          <div class="inputBox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="name" />
+          </div>
+          <input type="submit" class="btn" value="Contact Now" />
+        </form>
+      </div>
     </section>
     <!--! contact us section ends-->
 
     <!--! our blog section starts-->
-    <section class="products">
+    <section class="blogs">
       <h1 class="heading">Our <span>Blog</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/blog-1.jpg" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to make burgers?</a>
+            <span>By admin / 10th may, 2022</span>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/blog-2.jpg" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to make burgers?</a>
+            <span>By admin / 10th may, 2022</span>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/blog-3.jpg" alt="blog" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to make burgers?</a>
+            <span>By admin / 10th may, 2022</span>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!--! our blog section ends-->
+
+    <!--! our footer section starts-->
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Search"/>
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+        <a href="#">Blogs</a>
+      </div>
+
+      <div class="credit">
+        Created by <span>Yigit Kutay Gülben</span>
+      </div>
+    </section>
+    <!--! our footer section ends-->
   </body>
 </html>
